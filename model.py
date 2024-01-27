@@ -86,5 +86,10 @@ def main():
     rmse = mean_squared_error(y_test, y_pred, squared=False)
     print(f"RMSE: {rmse}")
 
+    # Print out predicted vs actual points_prices
+    print("\nPredicted vs Actual 'points_prices':")
+    for actual, predicted in zip(y_test, y_pred):
+        print(f"Actual: {actual * 1000:.4f}, Predicted: {predicted * 1000:.4f}")
+
 if __name__ == "__main__":
     main()
