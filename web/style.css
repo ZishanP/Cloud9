@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #072a4e;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -34,7 +34,7 @@ main {
 
 .ticket-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Three flights in a row */
     grid-gap: 2rem;
 }
 
@@ -43,14 +43,15 @@ main {
     border: 1px solid #ddd;
     padding: 1rem;
     text-align: center;
+    margin-bottom: 2rem; /* Add margin for spacing between rows */
 }
 
 .ticket h2 {
-    color: #007bff;
+    color: #072a4e;
 }
 
 button {
-    background-color: #28a745;
+    background-color: #cb3c3c;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -68,3 +69,10 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
+.flight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+    gap: 20px; /* Adjust the gap between flights */
+}
+
